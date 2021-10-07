@@ -9,6 +9,14 @@
   analytics.load("YOUR_WRITE_KEY");
   analytics.page();
   }}();
+  analytics.identify('f4ca124298', {
+  name: 'Michael Brown',
+  email: 'mbrown@example.com'
+  });
+  analytics.identify(' {{user.id}} ', {
+  name: '{{user.fullname}}',
+  email: '{{user.email}}'
+  });
 </script>
 </head> 
 
