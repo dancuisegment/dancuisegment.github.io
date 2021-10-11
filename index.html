@@ -147,6 +147,12 @@ Email: <input name="email" required="" size="75" type="email"/>
   }
 
 </script> 
+<footer>
+  analytics.identify(' {{user.id}} ', {
+  name: '{{user.fullname}}',
+  email: '{{user.email}}'
+  });
+</footer>
 
 </body> 
 </html>
